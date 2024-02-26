@@ -1,0 +1,39 @@
+class A
+{
+	int a,b;
+	void show(int x,int y)
+	{
+			a=x;
+			b=y;
+		System.out.println("value of a is="+a);
+		System.out.println("value of b is="+b);
+	}
+}
+class B extends A
+{
+	int a,b;
+	
+void show(int x,int y)
+	{
+			super.show(10,20);
+		a=x;
+			b=y;		System.out.println("value of a is="+a);
+		System.out.println("value of b is="+b);
+	}
+
+
+}
+class OverrideDemo
+{
+	public static void main(String A[])
+	{
+		
+		B b=new B();
+		
+		
+		b.show(30,40);
+		
+	}
+	
+	
+}
